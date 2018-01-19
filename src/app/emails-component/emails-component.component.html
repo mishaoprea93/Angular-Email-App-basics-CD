@@ -1,0 +1,27 @@
+<table>
+    <tr>
+        <th>
+            <h1>From:</h1>
+        </th>
+        <th>
+            <h1>Subject:</h1>
+        </th>
+        <th>
+            <h1>Importance:</h1>
+        </th>
+        <th>
+            <h1>Content:</h1>
+        </th>
+    </tr>
+    <tr *ngFor="let email of emails">
+
+        <td>{{email.from}}</td>
+
+        <td>{{email.subject}}</td>
+
+        <td>{{email.importance}}</td>
+        <td>{{email.content}}</td>
+        <hr>
+
+    </tr>
+</table>
